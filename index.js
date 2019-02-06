@@ -10,9 +10,9 @@
 		<meta property = "og:description" content = "The best screen for every classroom! Try it and love it." />
  
     <title>ClassroomScreen</title>
-		<link href = "style.css" rel = "stylesheet" type = "text/css" />
-		<link href = "./VesperEnterprise.PNG" rel = "icon" type = "image/png" sizes = "32x32">
-    <script src = "script.js"></script>
+		<link href = "./assets/css/style.css" rel = "stylesheet" type = "text/css" />
+		<link href = "./assets/img/VesperEnterprise.PNG" rel = "icon" type = "image/png" sizes = "32x32">
+    <script src = "./scripts/script.js"></script>
   </head>
   <body>
 		<br/>
