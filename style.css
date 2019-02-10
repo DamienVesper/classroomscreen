@@ -1,0 +1,245 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+
+
+/* Base Styling */
+* {
+	box-sizing: border-box;
+	transition: 0.3s;
+	font-family: "Roboto Slab", serif;
+}
+html, body, header, main, footer {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	background-color: #21d4fd;
+  background: linear-gradient(to bottom right, #21d4fd 0%, #b721ff 100%);
+  font-family: "Roboto Slab", cursive;
+	height: 100%;
+	width: 100%;
+	background-position: center center;
+}
+header, .box, footer {
+  background: #ddd;
+  background-image: linear-gradient(to bottom right, #dff 0%, #aaf 100%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9);
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.flex-line * {
+	display: inline-block;
+}
+.enabled {
+	opacity: 1;
+}
+.disabled {
+	opacity: 0.5;
+}
+/* Header Content Styling */
+header {
+	display: flex;
+	position: fixed;
+	width: 90%;
+	top: 0;
+	left: 0;
+	height: 50px;
+	border-top-left-radius: none;
+	border-top-right-radius: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+header > .inner > span.title {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+/* Main Content Styling */
+header > .inner > span.title {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 900;
+}
+input, textarea, select, button {
+	display: block;
+	position: relative;
+	padding: 5px 5px;
+	margin: 5px 1px;
+	border-radius: 5px;
+	background: transparent;
+	border: none;
+	color: #000;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+#class-name, #instructor-name { height: 50%; }
+/* Footer Content Styling */
+footer {
+	border-radius: 5px;
+	padding: 5px;
+	padding-left: 10px;
+}
+span, input, textarea {
+	padding-left: 15px;
+}
+.nopadding {
+	padding-left: 0px;
+}
+input:hover, textarea:hover {
+	background-color: #EEE;
+	border: 1px dashed #a1a1a1;
+}
+input:focus, textarea:focus {
+	background-color: #FFF;
+	border: 1px dotted #a1a1a1;
+}
+
+/* Other Styling */
+#class-name, #agenda-text, #schedule-text, #timer-text {
+	font-weight: bold;
+	font-size: 25px;
+}
+#instructions {
+	width: 100%;
+	height: calc(100% - 25px);
+	resize: none;
+	overflow: auto;
+	font-size: 20px;
+}
+#date, #time {
+	font-size: 250%;
+	text-align: right;
+	width: 100%;
+	padding-right: 15px;
+	margin-right: 15px;
+	margin-left: none;
+	padding-left: none;
+	float: right;
+}
+.hud-center-left {
+	height: 550px;
+}
+.hud-top-right {
+	width: auto;
+}
+.hud-center-right {
+	height: 250px;
+}
+.hud-top-right {
+	position: relative;
+	height: 125px;
+}
+#instructions {
+	height: calc(100% - 25px);
+}
+#schedule-text {
+	margin-left: calc(50% - 100px);
+	margin-right: calc(50% - 100px);
+}
+#schedule-table {
+	border-collapse: collapse;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#schedule-table * {
+	border: 1px solid #000;
+	padding: 5px;
+}
+.hud-center-bottom-right {
+	height: 257.5px;
+	display: inline-block;
+}
+.timer-left {
+	display: block;
+}
+#timer-text {
+	text-align: center;
+	margin-left: 50%;
+	margin-right: 50%;
+}
+#timer-add-bar, #timer-subtract-bar {
+	display: flex;
+}
+button {
+	display: inline-block;
+	background-color: #1e90ff;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #EEE;
+}
+.timer-change-btn {
+	height: 50px;
+	width: 50px;
+	font-size: 25px;
+	padding: 0;
+	margin: 0px 15px;
+}
+#timer-numbers {
+	font-size: 50px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+#timer-numbers-min-1, #timer-numbers-sec-2 {
+	margin: 0px 8.5px;
+}
+#timer-numbers-min-2, #timer-numbers-sec-1 {
+	margin: 0px 29.5px;
+}
+.timer-right {
+	display: inline-block;
+	width: 50px;
+	height: auto;
+}
+.btn-timer-select {
+	height: 25%;
+}
+.flex-timer-placeholder {
+	flex: 1;
+}
+button.disabled, input.disabled {
+	opacity: 0.5;
+}
+
+/* Responsive Styling */
+@media only screen and (min-width: 1255px) {
+	* {
+		overflow: hidden;
+	}
+	.hud-top, .hud-center, .hud-bottom {
+		display: flex;
+	}
+	.inner {
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hud-top-left {
+		width: 50%;
+	}
+	.flex-placeholder {
+		flex: 1;
+	}
+	.hud-center-right {
+		margin-right: 2.75%;
+	}
+	.hud-center-right, .hud-center-top-right, .hud-center-bottom-right {
+		width: 90%;
+		height: auto;
+	}
+	#timer-text {
+		text-align: center;
+		margin-left: calc(50% - 25px);
+		margin-right: calc(50% - 75px);
+	}
+}
